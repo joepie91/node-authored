@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+st = require("st");
+http = require("http");
+
+http.createServer(st({path: process.cwd(), cache: false})).listen(5555)

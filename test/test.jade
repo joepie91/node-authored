@@ -1,0 +1,42 @@
+html
+	head
+		script(src="test-bundle.js")
+		link(rel="stylesheet", href="style.css")
+	body
+		.main
+			.notice
+				strong This demo is <em>not</em> representative of the final functionality or design!
+				|  This is a technical demo, purely for the purpose of displaying some of the functionality that could be implemented. The authoring tool is intentionally a small, modular framework that allows for implementing pretty much <em>any</em> kind of functionality.
+			.renderer
+		.sidebar
+			section#scenes
+				h1 Scenes
+				div.scenes
+					.toolbar
+						button.action.action-addScene Add scene
+						button.action.action-removeScene Remove scene
+					ul.sceneList
+
+			section#layers
+				h1 Layers
+				div.layers
+					.toolbar
+						button.action.action-addLayer Add layer
+						button.action.action-removeLayer Remove layer
+					ul.layerList
+
+			section#objects
+				h1 Objects
+				div.objects
+					.toolbar
+						// button.action.action-addObject Add object
+						button.action.action-addObject(data-type="text") + Text
+						button.action.action-addObject(data-type="image") + Image
+						button.action.action-addObject(data-type="video") + Video
+						button.action.action-removeObject Remove
+					ul.objectList
+
+			section#properties
+				h1 Properties
+				div.properties
+					div.propertyList

@@ -1,0 +1,89 @@
+body {
+  font-family: sans-serif; }
+  body .main {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 260px; }
+    body .main .notice {
+      padding: 8px;
+      margin: 16px;
+      border: 1px solid red;
+      background-color: #ffdada; }
+    body .main .renderer {
+      background-color: lightgoldenrodyellow;
+      width: 800px;
+      height: 600px; }
+      body .main .renderer .rendererObject {
+        position: absolute;
+        cursor: default; }
+        body .main .renderer .rendererObject.activated {
+          outline: 1px dashed #720000;
+          cursor: move; }
+  body .sidebar {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 260px;
+    background-color: antiquewhite;
+    border-left: 1px solid gray; }
+    body .sidebar section h1 {
+      font-size: 17px;
+      font-weight: bold;
+      padding: 5px 7px;
+      margin: 0px;
+      background-color: #45674d;
+      color: white; }
+    body .sidebar section .action {
+      margin-left: 8px;
+      margin-top: 8px;
+      font-size: 13px;
+      border: 1px solid black;
+      background-color: white;
+      font-weight: bold;
+      padding: 3px 7px; }
+      body .sidebar section .action:hover {
+        background-color: #dddddd; }
+    body .sidebar section .toolbar {
+      border-bottom: 1px solid black;
+      background-color: white; }
+      body .sidebar section .toolbar .action {
+        border: 0px;
+        margin: 0px;
+        border-right: 1px solid black; }
+    body .sidebar section .layers ul, body .sidebar section .scenes ul, body .sidebar section .objects ul {
+      padding-left: 0px;
+      margin: 0px 0px 8px 0px;
+      border-bottom: 1px solid black;
+      background-color: azure; }
+      body .sidebar section .layers ul li, body .sidebar section .scenes ul li, body .sidebar section .objects ul li {
+        list-style-type: none;
+        padding: 3px 5px;
+        font-size: 14px; }
+        body .sidebar section .layers ul li.selected, body .sidebar section .scenes ul li.selected, body .sidebar section .objects ul li.selected {
+          background-color: #caf5f5;
+          color: red;
+          font-weight: bold; }
+        body .sidebar section .layers ul li.faded, body .sidebar section .scenes ul li.faded, body .sidebar section .objects ul li.faded {
+          color: gray; }
+    body .sidebar section .layers ul, body .sidebar section .scenes ul, body .sidebar section .objects ul, body .sidebar section .properties ul {
+      height: 100px;
+      overflow: auto; }
+    body .sidebar section .properties .property {
+      margin-bottom: 2px; }
+      body .sidebar section .properties .property:before, body .sidebar section .properties .property:after {
+        content: " ";
+        display: table; }
+      body .sidebar section .properties .property:after {
+        clear: both; }
+      body .sidebar section .properties .property label {
+        display: block;
+        float: left;
+        width: 90px;
+        padding: 3px 5px;
+        font-size: 14px;
+        background-color: #e2d2bd; }
+      body .sidebar section .properties .property input {
+        max-width: 150px; }
